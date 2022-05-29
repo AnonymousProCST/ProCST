@@ -60,8 +60,8 @@ pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable
 Download the pretrained semantic segmentation networks 
 trained on the source domain. Please create `./pretrained` folder and save the pretrained networks there.
 
-1. [GTA5 pretrained segmentation net](https://drive.google.com/file/d/1UoWR0oNknGTwAtpBvXorgfkvEhEe4yd6/view?usp=sharing)
-2. [Synthia pretrained segmentation net](https://drive.google.com/file/d/1UmwYkC9_qtF8Kahvxk5K_F9HW6T3j1U3/view?usp=sharing)
+1. [GTA5 pretrained segmentation net](https://drive.google.com/file/d/1_bvQqbrqE4H78nJIadhYXnsX_tqajsZH/view?usp=sharing)
+2. [Synthia pretrained segmentation net](https://drive.google.com/file/d/1Yk0knVInsBuWs22loIwBaNFnajVgjRyF/view?usp=sharing)
 
 ### Setup Datasets
 
@@ -123,8 +123,8 @@ python ./train_procst.py --source=synthia --src_data_dir=data/synthia --batch_si
 ## Boosting UDA methods
 After training a full ProCST model, we are ready to boost the performance of UDA methods. 
 For your convenience, we attach ProCST pretrained models:
-1. [ProCST GTA5&rarr;Cityscapes pretrained model](https://drive.google.com/file/d/1kmdzRE_WYafPkV9GsqP-kfCF1-wxF577/view?usp=sharing)
-1. [ProCST Synthia&rarr;Cityscapes pretrained model](https://drive.google.com/file/d/1kwXuVhA5Ucdy39fGFzqu_V_Lp-smvbQE/view?usp=sharing)
+1. [ProCST GTA5&rarr;Cityscapes pretrained model](https://drive.google.com/file/d/1hZ6uCHMRTzWp9SCYU9CzJ0euHN8wFlNM/view?usp=sharing)
+1. [ProCST Synthia&rarr;Cityscapes pretrained model](https://drive.google.com/file/d/1I5kLK5h-hDOVxG_lGerug7AyZGw1HuPK/view?usp=sharing)
 
 First, we will generate the SiT Dataset using the 
 pretrained models. 
@@ -154,8 +154,8 @@ Both methods were boosted due to our SiT dataset, and thus resulted in a new sta
 We provide checkpoints of the combined ProCST+DAFormer, trained on 
 GTA5&rarr;Cityscapes and Synthia&rarr;Cityscapes. Results can be tested on Cityscapes validation set.
 
-1. [GTA5&rarr;Cityscapes](https://drive.google.com/file/d/1z0frfWkEmEUACdEIazUsX1zdIPrXlcqJ/view?usp=sharing) checkpoint: 69.5% mIoU
-2. [Synthia&rarr;Cityscapes](https://drive.google.com/file/d/1wSp_iszCCpQcfXblGdfl-8bCVb7kkweL/view?usp=sharing) checkpoint: 62.4% mIoU
+1. [GTA5&rarr;Cityscapes](https://drive.google.com/file/d/189qkHq7bgdfqFKDtd9WQahtOOWb3mDB7/view?usp=sharing) checkpoint: 69.5% mIoU
+2. [Synthia&rarr;Cityscapes](https://drive.google.com/file/d/1n9vNkXSFY9uTl9xMPq1phy1s8OPQCaFY/view?usp=sharing) checkpoint: 62.4% mIoU
 
 In order to evaluate results using the above checkpoints, please refer
 to the original [DAFormer repository](https://github.com/lhoyer/DAFormer).  After setting up the required environment, 
